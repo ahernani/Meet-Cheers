@@ -18,20 +18,114 @@
 </head>
 
 <body>
+	<div class="container-fluid">
+		<section>
+			<div class="row" id="header">
 
-	<form>
-	  <div class="form-check">
-	    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-	    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-	  </div>
-	</form>
+				<div class="col-md-2" id="logo">
+					<div id="logo-wrapper">
+						<img src="Assets/meetcheers_color.svg">
+					</div>
+				</div>
+
+			</div>
+		</section>	
+
+		<section>
+			<div class="row filtros" id="status-bar">
+				
+			</div>
+		</section>
+
+		<section>
+			<div class="row filtros" id="filtros-intro">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-6">
+					<img src="Assets/group-14.svg">
+					<div style="padding-top: 15px">
+						<h1>Solicita tus presupuestos en 1 minuto</h1>
+						<h2>Cuéntanos qué necesitas y en 48h recibirás<br>3 presupuestos personalizados donde elegir</h2>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+				</div>
+			</div>
+
+			<div class="row filtros" id="filtros-cuando">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<select class="form-control selector" id="fecha">
+								<option selected disabled>Fecha</option>
+							    <option>1</option>
+							    <option>2</option>
+							    <option>3</option>
+							    <option>4</option>
+							    <option>5</option>
+							</select>
+					  </div>
+					</form>
+					<div class="container">
+						<div class="row">
+						<form>
+							<fieldset>
+								<label class="checkbox">
+									<input type="checkbox" checked="checked"><span>  Fecha provisional</span>
+								</label>
+							</fieldset>
+						</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-1">
+					<div class="dropdown-hora">
+						<form>
+						  <div class="form-group">
+								<select class="form-control selector" id="hora">
+									<option class="dropdown-label" selected disabled>Hora</option>
+								    <option class="dropdown-label">10:00h</option>
+								    <option class="dropdown-label">10:30h</option>
+								    <option class="dropdown-label">11:00h</option>
+								    <option>11:30h</option>
+								    <option>12:00h</option>
+								</select>
+						  </div>
+						</form>
+					</div>
+				</div>	
+
+				<div class="col-md-3">
+					<div class="dropdown-asistentes">
+						<form>
+						  <div class="form-group">
+								<select class="form-control selector" id="asistentes">
+									<option selected disabled>Número aprox. asistentes</option>
+								    <option>2</option>
+								    <option>3</option>
+								    <option>4</option>
+								    <option>5</option>
+								    <option>6</option>
+								</select>
+						  </div>
+						</form>
+					</div>
+				</div>
+
+				<div class="col-md-3">		
+				</div>
+				
+			</div>
 
 
-<!-- Squared FOUR -->
-<div class="squaredFour">
-    <input type="checkbox" value="None" id="squaredFour" name="check" />
-    <label for="squaredFour"></label>
-</div>
+
+		</section>	
 
 
 
@@ -39,6 +133,6 @@
 
 
 
-
+	</div>
 </body>
 </html>
