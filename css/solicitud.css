@@ -24,18 +24,32 @@ img {
     margin-right: auto;
 }
 
+label {
+    font-family: Raleway-Bold;
+    font-size: 15px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+
+select {
+   /*-webkit-appearance: none; 
+   -moz-appearance: none;
+    appearance: none; */      /* remove default arrow */
+   /*background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iOHB4IiB2aWV3Qm94PSIwIDAgMTYgOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTAgKDU0OTgzKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5Ecm9wZG93biBhcnJvdzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPgogICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoLTEiIHBvaW50cz0iOC4wMDEgMC45NDYgMTUuMzU0IDguMyAxNC42NDcgOS4wMDcgOC4wMDEgMi4zNiAxLjM1NSA5LjAwNyAwLjY0NyA4LjMiPjwvcG9seWdvbj4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iTW9sZWN1bGVzL2Ryb3Bkb3duLWNhbGVuZGFyL2Nsb3NlZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE0NS4wMDAwMDAsIC0xOC4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9IkRyb3Bkb3duLWFycm93IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTMuMDAwMDAwLCAyMi4wMDAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTE1My4wMDAwMDAsIC0yMi4wMDAwMDApIHRyYW5zbGF0ZSgxNDEuMDAwMDAwLCAxMC4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJhcnJvdy1kb3duLWNvcHkiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJpY29uLWFyZWEiIHg9IjAiIHk9IjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PC9yZWN0PgogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJBdG9tcy9NaXhpbi9Db2xvci9HZW5lcmFsLzAwMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNC4wMDAwMDAsIDcuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvbWFzaz4KICAgICAgICAgICAgICAgICAgICAgICAgPHVzZSBpZD0iTWFzayIgZmlsbD0iIzMzMzMzMyIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJBdG9tcy9Db2xvci9HZW5lcmFsLzAwMCIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjMDAwMDAwIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00LjAwMDAwMCwgLTcuMDAwMDAwKSIgaWQ9IlJlY3RhbmdsZSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48L3JlY3Q+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);   /* add custom arrow */
+}
+
+input {
+    font-family: Raleway-Medium;
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
 .filtros {
     background: rgba(236,236,236,0.46);
-}
-
-.selector {
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 2px;
-}
-
-.label {
-
 }
 
 .float{
@@ -82,7 +96,8 @@ img {
     line-height: 18px;
 }
 
-/* CSS copiado para los checkboxes */
+/* CSS COPIADO PARA LOS CHECKBOXES */
+/* He usado este link para convertir las imágenes: https://dopiaza.org/tools/datauri/index.php / tecnología Data-URI base64 converter */
 
 input[type='checkbox'] {
     /* Hide the checkbox input ui */
@@ -92,16 +107,25 @@ input[type='checkbox'] {
 /* Apply custom images - size your images according to text and stuff */
 /* Take any custom image you want and encode it with http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ or alike */
 input[type='checkbox'] + span{
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAEbgAABG4B0KOyaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACLSURBVDiN7Y4hDoNAAAR3rxeCxyBaX15ADsG3SPhAU9tP3RP4AgZbQbLZKlQNtJbxM7t0398kjQYqA2/sowz2cpEeUdIo6VXkPO2UAQBrSg1iHIKB6qgMAEXOk8k6HLj9hW2FX+WNM3AGtkD5h88Q7GVNqTlqrl13JznTbXtVjIPJ2rb2LpOco/38ABW9OK5LzYh0AAAAAElFTkSuQmCC) no-repeat center left;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE3cHgiIGhlaWdodD0iMTdweCIgdmlld0JveD0iMCAwIDE3IDE3IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1MCAoNTQ5ODMpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlJlY3RhbmdsZSA1PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlN5bWJvbHMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBdG9tL0NoZWNrYm94L2RlZmF1bHQiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iI0VEOEMwNCI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtNSIgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgcng9IjEiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==) no-repeat center left;
     padding-left: 18px;
     margin-left: -18px;
 }
 input[type='checkbox']:checked + span{
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAEbgAABG4B0KOyaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFiSURBVDiNlZAxSyNRFIW/+3wTBBvRxsK12kLBWsmMSbkLu62dYB2xsBQE0UIQO5HdztY/4A/YJiEZxHpdsFOLNO52C0nmzbGKmMTI5JTn3e++c4+pWv0UQjgQzAv+U0zTTnqeCuHUhxAOQggXpVbrriAMQLdcXsH7fSeYnxQGKLVadzJbcBPEHpGk4ApPm7ksSc47cfz5re2L8iFJfgI1B3PAdt8fTbC6Whq2skrlWFAD0qjTqb19G1iQVatJb3b2vhfHa32vlyQ7SEfAb5/n37m9Hehs4ASTtoAlnPuVVSqbluczZvZD8Bhl2VfS9O9wuoEEU43GLmYXwAzStcyugH/K8y+k6dNoM8MdSPL1+h5mh0AEZMrzb6Vm88978MgJr2a9ftLb2Gib9BA1mzfj4LELAKJG4/IjsC8HTBcZHCNzTnrulssrk5LdOF42s7ZpfX0xeL8vswVJoejPZtb20tkLKyaJLiCC000AAAAASUVORK5CYII=) no-repeat center left;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE3cHgiIGhlaWdodD0iMTdweCIgdmlld0JveD0iMCAwIDE3IDE3IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1MCAoNTQ5ODMpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkNvbWJpbmVkIFNoYXBlPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlN5bWJvbHMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBdG9tL2NoZWNrYm94L2NoZWNrZWQiIGZpbGw9IiNFRDhDMDQiIHN0cm9rZT0iI0VEOEMwNCI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xLDAuNSBDMC43MjM4NTc2MjUsMC41IDAuNSwwLjcyMzg1NzYyNSAwLjUsMSBMMC41LDE2IEMwLjUsMTYuMjc2MTQyNCAwLjcyMzg1NzYyNSwxNi41IDEsMTYuNSBMMTYsMTYuNSBDMTYuMjc2MTQyNCwxNi41IDE2LjUsMTYuMjc2MTQyNCAxNi41LDE2IEwxNi41LDEgQzE2LjUsMC43MjM4NTc2MjUgMTYuMjc2MTQyNCwwLjUgMTYsMC41IEwxLDAuNSBaIE02LjIzMzU5NDMxLDEwLjU5MTYwNzIgTDEzLjE5ODgyNTYsMy4yNzQ4MjkyMSBMMTQuNjkwMzI4OCw0Ljg0MTYxMSBMNi4yMzM1OTQzMSwxMy43MjUxNzA4IEwyLjMwOTY3MTI0LDkuNjAzMjAwODUgTDMuODAxMTc0NDEsOC4wMzY0MTkwNSBMNi4yMzM1OTQzMSwxMC41OTE2MDcyIFoiIGlkPSJDb21iaW5lZC1TaGFwZSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+) no-repeat center left;
 }
 /* Compatibility: pretty much all browsers except IE prior version 8 */
 
 /* The following styles are for this example only and do not affect the functionality */
 /*span { color: #fb3b3b }*/
 
-/* Fin CSS copiado para os cehckboxes */
+/* FIN CSS COPIADO PARA LOS CHECKBOXES */
+
+/*CSS PARA LOS DROPDOWN*/
+.selcls { 
+    padding: 3px; 
+    border: solid 1px #CCCCCC; 
+    outline: 0; 
+    background: #FFFFFF;  
+} 
+ /*FIN CSS PARA LOS DROPDOWN*/   

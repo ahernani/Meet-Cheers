@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Landing MeetnCheers</title>
 
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -19,6 +20,9 @@
 
 <body>
 	<div class="container-fluid">
+
+<!-- HEADER -->	
+
 		<section>
 			<div class="row" id="header">
 
@@ -31,11 +35,17 @@
 			</div>
 		</section>	
 
+<!-- STATUS BAR -->			
+
 		<section>
 			<div class="row filtros" id="status-bar">
 				
 			</div>
 		</section>
+
+<!-- FORMULARI/FILTROS -->
+
+<!-- INTRO -->			
 
 		<section>
 			<div class="row filtros" id="filtros-intro">
@@ -54,14 +64,16 @@
 				</div>
 			</div>
 
+<!-- DÍA, HORA Y NUMERO DE ASISTENTES -->						
+
 			<div class="row filtros" id="filtros-cuando">
 				<div class="col-md-3">		
 				</div>
 
 				<div class="col-md-2">
 					<form>
-					  <div class="form-group">
-							<select class="form-control selector" id="fecha">
+					  	<div class="form-group">
+							<select class="form-control selector selcls" id="fecha">
 								<option selected disabled>Fecha</option>
 							    <option>1</option>
 							    <option>2</option>
@@ -69,15 +81,13 @@
 							    <option>4</option>
 							    <option>5</option>
 							</select>
-					  </div>
+					  	</div>
 					</form>
 					<div class="container">
 						<div class="row">
 						<form>
 							<fieldset>
-								<label class="checkbox">
-									<input type="checkbox" checked="checked"><span>  Fecha provisional</span>
-								</label>
+								<input type="checkbox"><span>  Fecha provisional</span>
 							</fieldset>
 						</form>
 						</div>
@@ -122,6 +132,470 @@
 				</div>
 				
 			</div>
+
+<!-- TIPO DE EVENTO -->				
+
+
+			<div class="row filtros" id="filtros-tipo-evento" style="padding-top: 40px">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-3">
+					<form>
+					  <div class="form-group">
+					  		<label for="tipo-evento" style="padding-bottom: 8px">¿Qué tipo de evento vas a celebrar?</label>
+							<select class="form-control selector" id="fecha">
+								<option selected disabled>Ej: Cena de navidad</option>
+							    <option>1</option>
+							    <option>2</option>
+							    <option>3</option>
+							    <option>4</option>
+							    <option>5</option>
+							</select>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-6">		
+				</div>
+				
+			</div>
+
+<!-- RANGO DE PRECIOS -->				
+
+
+			<div class="row filtros" id="filtros-precio" style="padding-top: 30px">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-4">
+					<form>
+					  <div class="form-group">
+					  		<label for="precio">Precio por asistente</label>
+							
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-5">		
+				</div>
+				
+			</div>
+
+
+<!-- ZONA -->				
+
+			<div class="row filtros" id="filtros-zona" style="padding-top: 30px">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  	<div class="form-group">
+					  		<label for="zona">Zona</label>
+					  	</div>
+					 </form>
+				</div>	  	
+			</div>	
+
+
+
+
+			<div class="row filtros" id="filtros-zona">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+					  		<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-1">		
+				</div>
+				
+			</div>
+
+<!-- AMBIENTE -->				
+
+			<div class="row filtros" id="filtros-ambiente" style="padding-top: 30px">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  	<div class="form-group">
+					  		<label for="ambiente">Ambiente</label>
+					  	</div>
+					 </form>
+				</div>	  	
+			</div>	
+
+
+
+
+			<div class="row filtros" id="filtros-ambiente">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Actual</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-3">		
+				</div>
+				
+			</div>
+
+<!-- TIPO DE COMIDA -->				
+
+			<div class="row filtros" id="filtros-tipo-comida" style="padding-top: 30px">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  	<div class="form-group">
+					  		<label for="tipo-comida">Tipo de comida</label>
+					  	</div>
+					 </form>
+				</div>	  	
+			</div>	
+
+
+
+
+			<div class="row filtros" id="filtros-ambiente">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Americano</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+					  		<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-1">		
+				</div>
+				
+			</div>
+
+<!-- DIETAS ESPECIALES -->				
+
+			<div class="row filtros" id="filtros-dietas" style="padding-top: 30px">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-4">
+					<form>
+					  	<div class="form-group">
+					  		<label for="dietas">Infórmanos si necesitáis opciones para (opcional):</label>
+					  	</div>
+					 </form>
+				</div>	  	
+			</div>	
+
+
+
+
+			<div class="row filtros" id="filtros-dietas">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Celíacos</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-5">		
+				</div>
+				
+			</div>
+
+
+
+<!-- SERVICIOS EXTRA -->				
+
+			<div class="row filtros" id="filtros-extras" style="padding-top: 30px">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-4">
+					<form>
+					  	<div class="form-group">
+					  		<label for="extras">Servicios extras (opcional)</label>
+					  	</div>
+					 </form>
+				</div>	  	
+			</div>	
+
+
+
+
+			<div class="row filtros" id="filtros-extras">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Proyector</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<form>
+					  <div class="form-group">
+							<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>  Eixample Dret</span>
+							</fieldset>
+					  </div>
+					</form>
+				</div>
+
+				<div class="col-md-5">		
+				</div>
+				
+			</div>			
 
 
 
