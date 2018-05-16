@@ -41,22 +41,16 @@
 					</div>
 				</div>
 
-				<div class="col-md-1">
-					<div>
-					</div>
-				</div>
-
-				<div class="col-md-5" id="status">
-					<div id="status-wrapper">
-						<img src="Assets/1-pedir.svg">
-					</div>
-				</div>
-
-
 			</div>
 		</section>	
 
+<!-- STATUS BAR -->			
 
+		<section>
+			<div class="row filtros" id="status-bar">
+				
+			</div>
+		</section>
 
 <!-- FORMULARI/FILTROS -->
 
@@ -119,19 +113,19 @@
 				</div>
 
 				<div class="col-md-2">
-					  <div class="form-group" style="padding-top: 70px;">
+					  <div class="form-group" style="padding-top: 40px;">
 					  		<label for="precio">Fecha</label>
 					  </div>
 				</div>
 
 				<div class="col-md-1">	
-					<div class="form-group" style="padding-top: 70px;">
+					<div class="form-group" style="padding-top: 40px;">
 					  		<label for="precio">Hora</label>
 					  </div>	
 				</div>
 				
 				<div class="col-md-3">	
-					<div class="form-group" style="padding-top: 70px;">
+					<div class="form-group" style="padding-top: 40px;">
 					  		<label for="precio">Número aproximado de asistentes</label>
 					  </div>	
 				</div>
@@ -139,9 +133,10 @@
 				<div class="col-md-3">	
 				</div>
 			</div>
-
+			
 
 			<div class="row filtros" id="filtros-cuando">
+
 				<div class="col-md-3">		
 				</div>
 
@@ -319,6 +314,9 @@
 				</div>
 				
 			</div>
+
+
+
 
 <!-- TIPO DE EVENTO -->				
 
@@ -830,138 +828,10 @@
 				</div>
 			</div>
 
-		</section>
-
-<!-- SEPARADOR -->	
-		<section>
-			<div class="row filtros" id="filtros-separador">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-6"  id="separador">
-						
-				</div>
-
-				<div class="col-md-3">		
-				</div>
-			</div>	
-			
-
-		</section>
-
-<!-- TE MANDAMOS LOS PRESUPUESTOS POR MAIL -->			
-
-		<section>
-			<div class="row filtros" id="filtros-intro">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-6">
-					<div style="padding-top: 15px">
-						<h1>¡Te mandamos los presupuestos por email!</h1>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-				</div>
-			</div>
-
-			<!-- Nombre de la empresa -->				
-
-			<div class="row filtros" id="filtros-nombre" style="padding-top: 30px">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-4">
-					<form>
-					  	<div class="form-group">
-					  		<label for="extras">Nombre de la empresa</label>
-					  	</div>
-					 </form>
-				</div>	  	
-			</div>	
+		</section>	
 
 
-
-			<div class="row filtros" id="filtros-detalles">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-4">
-					<form>
-						<textarea class="form-control" rows="1" placeholder="Ej: Meet&Cheers"></textarea>
-					</form>
-				</div>
-
-				<div class="col-md-5">		
-				</div>
-			</div>
-
-			<!-- Tu nombre -->				
-
-			<div class="row filtros" id="filtros-nombre" style="padding-top: 30px">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-4">
-					<form>
-					  	<div class="form-group">
-					  		<label for="extras">Tu nombre</label>
-					  	</div>
-					 </form>
-				</div>	  	
-			</div>	
-
-
-
-			<div class="row filtros" id="filtros-detalles">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-4">
-					<form>
-						<textarea class="form-control" rows="1" placeholder="Ej: Laura García"></textarea>
-					</form>
-				</div>
-
-				<div class="col-md-5">		
-				</div>
-			</div>
-
-			<!-- Tu correo electrónico -->				
-
-			<div class="row filtros" id="filtros-nombre" style="padding-top: 30px">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-4">
-					<form>
-					  	<div class="form-group">
-					  		<label for="extras">Tu correo electrónico</label>
-					  	</div>
-					 </form>
-				</div>	  	
-			</div>	
-
-
-
-			<div class="row filtros" id="filtros-detalles">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-4">
-					<form>
-						<textarea class="form-control" rows="1" placeholder="Ej: laura@meetncheers.com"></textarea>
-					</form>
-				</div>
-
-				<div class="col-md-5">		
-				</div>
-			</div>
-
-		</section>
-
-<!-- CTA -->			
+<!-- INTRO -->			
 
 		<section>
 			<div class="row filtros">
@@ -980,7 +850,26 @@
 
 
 
+<script type="text/javascript">
 
+	//DIA//
+	
+	//FIN DE DIA//
+
+	// BARRA DE RANGO DE PRECIOS //
+
+	 $(function() {
+	    $('#bs-slider-2').slider({
+	      reversed: $('html').attr('dir') === 'rtl'
+	    });
+	  });
+
+	// FIN DE BARRA DE RANGO DE PRECIOS //
+
+
+
+
+</script>
 
 
 
