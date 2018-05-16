@@ -48,12 +48,46 @@ input {
     line-height: 18px;
 }
 
+textarea {
+   resize: none;
+}
+
 .filtros {
     background: rgba(236,236,236,0.46);
 }
 
 .float{
     display: inline-block;
+}
+
+.selector {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+}
+
+.dropdown-label {
+    font-family: Raleway-Medium;
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 42px;
+    background: #00C9AF;
+    border: 1px solid #00C9AF;
+    border-radius: 100px;
+    font-family: Raleway-Medium;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
 }
 
 #header {
@@ -82,19 +116,7 @@ input {
     justify-content: center;
 }
 
-.selector {
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 2px;
-}
 
-.dropdown-label {
-    font-family: Raleway-Medium;
-    font-size: 13px;
-    color: #333333;
-    letter-spacing: 0;
-    line-height: 18px;
-}
 
 /* CSS COPIADO PARA LOS CHECKBOXES */
 /* He usado este link para convertir las imágenes: https://dopiaza.org/tools/datauri/index.php / tecnología Data-URI base64 converter */

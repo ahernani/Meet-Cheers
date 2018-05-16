@@ -12,6 +12,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+	<!--COSAS DEL SLIDER DE PRECIO-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.min.css">
+
+	<!--FIN DE COSAS DEL SLIDER DE PRECIO-->
 	<link rel="stylesheet" type="text/css" href="css/solicitud.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
@@ -268,8 +275,9 @@
 							    <option>Comida de navidad</option>
 							    <option>Comida de verano</option>
 							    <option>Comida con inversores</option>
+							    <option>Comida con clientes</option>
                                 <option>Celebración de algún hito</option>
-							    <option></option>
+							    <option>Otros</option>
 							</select>
 					  </div>
 					</form>
@@ -291,7 +299,6 @@
 					<form>
 					  <div class="form-group">
 					  		<label for="precio">Precio por asistente</label>
-							
 					  </div>
 					</form>
 				</div>
@@ -301,6 +308,26 @@
 				
 			</div>
 
+
+
+			<div class="row filtros" id="filtros-precio">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-4">
+					  <div class="form-group">
+					  		
+						<input id="bs-slider-2" type="text" value="" data-slider-min="5" data-slider-max="150" data-slider-step="5" data-slider-value="[5,150]">
+						<b class="pull-md-left">5€</b>
+						<b class="pull-md-right">150€</b>
+							
+					  </div>
+				</div>
+
+				<div class="col-md-">		
+				</div>
+				
+			</div>
 
 <!-- ZONA -->				
 
@@ -525,7 +552,7 @@
 								<input type="checkbox"><span>  Arrocería</span>
 							</fieldset>
 							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Ctalán</span>
+								<input type="checkbox"><span>  Catalán</span>
 							</fieldset>
 					  </div>
 					</form>
@@ -714,14 +741,78 @@
 				<div class="col-md-5">		
 				</div>
 				
-			</div>			
+			</div>
 
 
+<!-- DETALLES -->				
+
+			<div class="row filtros" id="filtros-detalles" style="padding-top: 30px">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-4">
+					<form>
+					  	<div class="form-group">
+					  		<label for="extras">¿Algún detalle más que contarnos? (opcional)</label>
+					  	</div>
+					 </form>
+				</div>	  	
+			</div>	
+
+
+
+			<div class="row filtros" id="filtros-detalles">
+				<div class="col-md-3">		
+				</div>
+
+				<div class="col-md-6">
+					<form>
+						<textarea class="form-control" rows="4" placeholder="¡Escríbenos todos los detalles que quieras para dar en el clavo! No introduzcas tus datos de contacto para mantener tu privacidad."></textarea>
+					</form>
+				</div>
+
+				<div class="col-md-3">		
+				</div>
+			</div>
 
 		</section>	
 
 
+<!-- INTRO -->			
 
+		<section>
+			<div class="row filtros">
+				<div class="col-md-5">		
+				</div>
+
+				<div class="col-md-2" style="padding-top: 50px; padding-bottom: 75px;">
+					<div class="cta">
+						PEDIR PRESUPUESTO
+					</div>	
+				</div>
+
+				<div class="col-md-5">
+				</div>
+			</div>
+
+
+
+<script type="text/javascript">
+
+	// BARRA DE RANGO DE PRECIOS //
+
+	 $(function() {
+	    $('#bs-slider-2').slider({
+	      reversed: $('html').attr('dir') === 'rtl'
+	    });
+	  });
+
+	// FIN DE BARRA DE RANGO DE PRECIOS //
+
+
+
+
+</script>
 
 
 
