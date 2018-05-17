@@ -18,6 +18,22 @@ h2{
     text-align: center;
 }
 
+h3{
+    font-family: Raleway-Bold;
+    font-size: 25px;
+    color: #666666;
+    letter-spacing: 1.55px;
+    text-align: center;
+}
+
+h4{
+    font-family: Raleway-Medium;
+    font-size: 20px;
+    color: #666666;
+    letter-spacing: 1.55px;
+    text-align: center;
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -191,4 +207,49 @@ input[type='checkbox']:checked + span{
 
 /* FIN CSS PARA CALENDARIO*/
 
-/* CSS PARA RANGO DE PRECIOS*/
+
+
+/*CSS PARA LOS INPUT RANGES*/
+.slider-track-low, .slider-track-high {
+    background: #CCCCCC!important;
+}
+
+.slider-selection {
+    background-image: linear-gradient(to bottom,#ED8C04 100%,#ED8C04 100%)!important;
+}
+
+.tooltip.in { 
+    opacity: 1 !important;
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    top:100%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;    
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.slider.slider-horizontal {
+    margin: 0px 10px 0px 10px;
+}
+
+.pull-md-left {
+    font-family: Raleway-Regular;
+    font-size: 16px;
+    color: #333333;
+}
+
+#feedback {
+    height: 600px;
+}
+/*FIN CSS PARA LOS INPUT RANGES*/

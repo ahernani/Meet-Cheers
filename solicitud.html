@@ -6,20 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Landing MeetnCheers</title>
 
-	<!--RANGO DE PRECIOS-->
-	<link rel="stylesheet" href="css/iThing.css" type="text/css" />
-	<!--FIN DE RANGO DE PRECIOS-->
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+	<!--COSAS DEL SLIDER DE PRECIO-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.min.css">
 
-
-
-
-	
+	<!--FIN DE COSAS DEL SLIDER DE PRECIO-->
 
 	<link rel="stylesheet" type="text/css" href="css/solicitud.css">
 
@@ -46,9 +45,14 @@
 					</div>
 				</div>
 
-				<div class="col-md-5" id="status">
+				<div class="col-md-6" id="status">
 					<div id="status-wrapper">
-						<img src="Assets/1-pedir.svg">
+						<img src="Assets/1-pedir.svg" width="445px">
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div>
 					</div>
 				</div>
 
@@ -357,9 +361,11 @@
 				</div>
 
 				<div class="col-md-4">
+					<form>
 					  <div class="form-group">
 					  		<label for="precio">Precio por asistente</label>
 					  </div>
+					</form>
 				</div>
 
 				<div class="col-md-5">		
@@ -374,9 +380,11 @@
 				</div>
 
 				<div class="col-md-4">
-					  
-
-
+					  <div class="form-group">
+					  	<b class="pull-md-left"><span style="font-family: Raleway-Regular; font-size: 15px; font-weight: normal; color: #333333;"> 5€</span></b>	
+						<input id="bs-slider-2" type="text" value="" data-slider-min="5" data-slider-max="150" data-slider-step="5" data-slider-value="[5,150]">
+						<b class="pull-md-right"><span style="font-family: Raleway-Regular; font-size: 15px; font-weight: normal; color: #333333;"> 150€</span></b>
+					  </div>
 				</div>
 
 				<div class="col-md-">		
@@ -968,11 +976,15 @@
 				<div class="col-md-5">		
 				</div>
 
+				
 				<div class="col-md-2" style="padding-top: 50px; padding-bottom: 75px;">
-					<div class="cta">
-						PEDIR PRESUPUESTO
-					</div>	
+					<a href="solicitud-feedback.html">
+						<div class="cta">
+							PEDIR PRESUPUESTO
+						</div>	
+					</a>
 				</div>
+			
 
 				<div class="col-md-5">
 				</div>
@@ -981,6 +993,20 @@
 
 
 
+<script type="text/javascript">
+
+	// BARRA DE RANGO DE PRECIOS //
+
+	 $(function() {
+	    $('#bs-slider-2').slider({
+	      reversed: $('html').attr('dir') === 'rtl',
+	      tooltip: 'show'	      
+	    });
+	  });
+
+	// FIN DE BARRA DE RANGO DE PRECIOS //
+
+</script>
 
 
 
