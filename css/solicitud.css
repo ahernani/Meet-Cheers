@@ -57,7 +57,7 @@ select {
 }
 
 input {
-    font-family: Raleway-Medium;
+    font-family: Raleway;
     font-size: 13px;
     color: #333333;
     letter-spacing: 0;
@@ -104,6 +104,27 @@ textarea {
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a.cta:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    height: 42px;
+    background: #03B59E;
+    border: 1px solid #03B59E;
+    border-radius: 100px;
+    font-family: Raleway-Medium;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #header {
@@ -172,7 +193,8 @@ input[type='checkbox'] {
 
 /* Apply custom images - size your images according to text and stuff */
 /* Take any custom image you want and encode it with http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ or alike */
-input[type='checkbox'] + span{
+
+[type='checkbox'] + span{
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE3cHgiIGhlaWdodD0iMTdweCIgdmlld0JveD0iMCAwIDE3IDE3IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1MCAoNTQ5ODMpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlJlY3RhbmdsZSA1PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlN5bWJvbHMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBdG9tL0NoZWNrYm94L2RlZmF1bHQiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iI0VEOEMwNCI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtNSIgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgcng9IjEiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==) no-repeat center left;
     padding-left: 18px;
     margin-left: -18px;
