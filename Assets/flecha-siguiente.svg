@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Button/siguiente/activado" transform="translate(-96.000000, -15.000000)" stroke="#FFFFFF">
+            <g id="Group" transform="translate(97.000000, 15.000000)">
+                <path d="M0,6 L14,6" id="Path-2"></path>
+                <polyline id="Path-5" stroke-linejoin="round" transform="translate(11.511364, 5.761340) rotate(-270.000000) translate(-11.511364, -5.761340) " points="6 8.52268051 11.5226805 3 17.0227273 8.50004676"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
