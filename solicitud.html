@@ -83,18 +83,20 @@
 				</div>
 			</div>
 
-<!-- NOMBRE DEL EVENTO -->				
+<!-- NOMBRE DEL EVENTO -->		
+
+		<form action="solicitud-feedback.html">		
 
 			<div class="row filtros" id="filtros-nombre" style="padding-top: 30px">
 				<div class="col-md-3">		
 				</div>
 
 				<div class="col-md-4">
-					<form>
+					
 					  	<div class="form-group">
 					  		<label for="extras">Nombre del evento</label>
 					  	</div>
-					 </form>
+					 
 				</div>	  	
 			</div>	
 
@@ -105,9 +107,8 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
-						<textarea class="form-control" rows="1" placeholder="Ej: Cena de navidad"></textarea>
-					</form>
+						<input required type="text" name="nombre" placeholder="Ej: Cena de Navidad" class="form-control" maxlength="40">
+					
 				</div>
 
 				<div class="col-md-5">		
@@ -150,31 +151,27 @@
 				</div>
 
 				<div class="col-md-2">
-					<form action="/action_page.php">
-					  <input type="date" name="dia" id="dia">
-					</form>
-
+					
+					  <input required type="date" name="dia" id="dia">
+					
 
 					<div class="container" style="padding-top: 10px;">
 						<div class="row">
-						<form>
 							<fieldset style="padding-left: 5px;">
 								<input type="checkbox"><span>  Fecha provisional</span>
 							</fieldset>
-						</form>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-1">
 					<div class="dropdown-hora">
-						<form>
 						  <div class="form-group">
-								<select class="form-control selector" id="hora">
-									<option class="dropdown-label" selected disabled>Hora</option>
-								    <option class="dropdown-label">10:00h</option>
-								    <option class="dropdown-label">10:30h</option>
-								    <option class="dropdown-label">11:00h</option>
+								<select required class="form-control selector" id="hora">
+									<option selected disabled value="">Hora</option>
+								    <option value="random">10:00h</option>
+								    <option value="random">10:30h</option>
+								    <option value="random">11:00h</option>
 								    <option>11:30h</option>
 								    <option>12:00h</option>
                                     <option>12:30h</option>
@@ -202,17 +199,15 @@
                                     <option>00:00h</option>
 								</select>
 						  </div>
-						</form>
 					</div>
 				</div>	
 
 				<div class="col-md-3">
 					<div class="dropdown-asistentes">
-						<form>
 						  <div class="form-group">
-								<select class="form-control selector" id="asistentes">
-									<option selected disabled>Número aprox. asistentes</option>
-								    <option>2</option>
+								<select required class="form-control selector" id="asistentes">
+									<option selected disabled value="">Número aprox. asistentes</option>
+								    <option value="random">2</option>
 								    <option>3</option>
 								    <option>4</option>
 								    <option>5</option>
@@ -316,7 +311,6 @@
                                     
 								</select>
 						  </div>
-						</form>
 					</div>
 				</div>
 
@@ -333,20 +327,18 @@
 				</div>
 
 				<div class="col-md-3">
-					<form>
 					  <div class="form-group">
 					  		<label for="tipo-evento" style="padding-bottom: 8px">¿Qué tipo de evento vas a celebrar?</label>
-							<select class="form-control selector" id="fecha">
-								<option selected disabled>Ej: Comida de navidad</option>
-							    <option>Comida de navidad</option>
-							    <option>Comida de verano</option>
-							    <option>Comida con inversores</option>
-							    <option>Comida con clientes</option>
-                                <option>Celebración de algún hito</option>
-							    <option>Otros</option>
+							<select required class="form-control selector" id="fecha">
+								<option disabled selected value="">Seleccionar...</option>
+							    <option value="comidanavidad">Comida de navidad</option>
+							    <option value="comidaverano">Comida de verano</option>
+							    <option value="comidainversores">Comida con inversores</option>
+							    <option value="comidaclientes">Comida con clientes</option>
+                                <option value="celebracion">Celebración de algún hito</option>
+							    <option value="otros">Otros</option>
 							</select>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-6">		
@@ -362,11 +354,9 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
 					  <div class="form-group">
 					  		<label for="precio">Rango de precio por asistente</label>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-5">		
@@ -400,11 +390,9 @@
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  	<div class="form-group">
 					  		<label for="zona">Zona</label>
 					  	</div>
-					 </form>
 				</div>	  	
 			</div>	
 
@@ -416,9 +404,11 @@
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
+					  		<fieldset style="padding-left: 5px; padding-top: 0px;">
+								<input type="checkbox"><span>   Todas</span>
+							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
 								<input type="checkbox"><span>   Eixample Dret</span>
 							</fieldset>
 							<fieldset style="padding-left: 5px; padding-top: 8px;">
@@ -431,11 +421,9 @@
 								<input type="checkbox"><span>   Gràcia</span>
 							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>   Born-La Ribera</span>
@@ -449,12 +437,13 @@
 							<fieldset style="padding-left: 5px; padding-top: 8px;">
 								<input type="checkbox"><span>   Diagonal Mar</span>
 							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   La Sagrera</span>
+							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>   Centro</span>
@@ -468,12 +457,13 @@
 							<fieldset style="padding-left: 5px; padding-top: 8px;">
 								<input type="checkbox"><span>   El Gòtic</span>
 							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Sant Andreu</span>
+							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 					  		<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>   Raval</span>
@@ -487,8 +477,10 @@
 							<fieldset style="padding-left: 5px; padding-top: 8px;">
 								<input type="checkbox"><span>   Vila Olímpica</span>
 							</fieldset>
+							<fieldset style="padding-left: 5px; padding-top: 8px;">
+								<input type="checkbox"><span>   Les Corts</span>
+							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-1">		
@@ -503,11 +495,9 @@
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  	<div class="form-group">
 					  		<label for="ambiente">Ambiente</label>
 					  	</div>
-					 </form>
 				</div>	  	
 			</div>	
 
@@ -519,7 +509,6 @@
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 					  		<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Todos</span>
@@ -534,11 +523,9 @@
 								<input type="checkbox"><span>  Con encanto</span>
 							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 					  		<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Están de moda</span>
@@ -553,11 +540,9 @@
 								<input type="checkbox"><span>  Exótico</span>
 							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Informal</span>
@@ -573,7 +558,6 @@
 							</fieldset>
 							
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-3">		
@@ -588,11 +572,9 @@
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  	<div class="form-group">
 					  		<label for="tipo-comida">Tipo de comida</label>
 					  	</div>
-					 </form>
 				</div>	  	
 			</div>	
 
@@ -604,7 +586,6 @@
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Todos</span>
@@ -622,11 +603,9 @@
 								<input type="checkbox"><span>  Arrocería</span>
 							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Catalán</span>
@@ -644,11 +623,9 @@
 								<input type="checkbox"><span>  Gallego</span>
 							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Hindú</span>
@@ -666,11 +643,9 @@
 								<input type="checkbox"><span>  Marroquí</span>
 							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 					  		<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Mediterráneo</span>
@@ -688,7 +663,6 @@
 								<input type="checkbox"><span>  Vasco</span>
 							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-1">		
@@ -703,11 +677,9 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
 					  	<div class="form-group">
 					  		<label for="dietas">Infórmanos si necesitáis opciones para (opcional):</label>
 					  	</div>
-					 </form>
 				</div>	  	
 			</div>	
 
@@ -719,7 +691,6 @@
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Celíacos</span>
@@ -728,11 +699,9 @@
 								<input type="checkbox"><span>  Intolerantes lactosa</span>
 							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Veganos</span>
@@ -741,7 +710,6 @@
 								<input type="checkbox"><span>  Vegetarianos</span>
 							</fieldset>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-5">		
@@ -758,11 +726,9 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
 					  	<div class="form-group">
 					  		<label for="extras">Servicios extras (opcional)</label>
 					  	</div>
-					 </form>
 				</div>	  	
 			</div>	
 
@@ -774,7 +740,6 @@
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Sala privada</span>
@@ -790,11 +755,9 @@
 							</fieldset>
 							
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-2">
-					<form>
 					  <div class="form-group">
 							<fieldset style="padding-left: 5px; padding-top: 0px;">
 								<input type="checkbox"><span>  Barra de copas</span>
@@ -807,7 +770,6 @@
 							</fieldset>
 							
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-5">		
@@ -823,11 +785,9 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
 					  	<div class="form-group">
 					  		<label for="extras">¿Algún detalle más que contarnos? (opcional)</label>
 					  	</div>
-					 </form>
 				</div>	  	
 			</div>	
 
@@ -838,9 +798,9 @@
 				</div>
 
 				<div class="col-md-6">
-					<form>
+						
 						<textarea class="form-control" rows="4" placeholder="¡Escríbenos todos los detalles que quieras para dar en el clavo! No introduzcas tus datos de contacto para mantener tu privacidad."></textarea>
-					</form>
+					
 				</div>
 
 				<div class="col-md-3">		
@@ -890,11 +850,9 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
 					  	<div class="form-group">
 					  		<label for="extras">Nombre de la empresa</label>
 					  	</div>
-					 </form>
 				</div>	  	
 			</div>	
 
@@ -905,9 +863,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
-						<textarea class="form-control" rows="1" placeholder="Nombre de la empresa"></textarea>
-					</form>
+						<input required type="text" name="nombre" placeholder="Nombre de la empresa" class="form-control" maxlength="40">
 				</div>
 
 				<div class="col-md-5">		
@@ -921,11 +877,9 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
 					  	<div class="form-group">
 					  		<label for="extras">Tu nombre y apellido</label>
 					  	</div>
-					 </form>
 				</div>	  	
 			</div>	
 
@@ -936,9 +890,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
-						<textarea class="form-control" rows="1" placeholder="Nombre y apellido"></textarea>
-					</form>
+						<input required type="text" name="nombre" placeholder="Nombre y apellido" class="form-control" maxlength="40">
 				</div>
 
 				<div class="col-md-5">		
@@ -952,11 +904,9 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
 					  	<div class="form-group">
 					  		<label for="extras">Tu correo electrónico</label>
 					  	</div>
-					 </form>
 				</div>	  	
 			</div>	
 
@@ -967,9 +917,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
-						<input type="email" name="email" id="email" placeholder="Correo electrónico" required>
-					</form>
+						<input required type="email" name="email" id="email" placeholder="Correo electrónico" maxlength="40">
 				</div>
 
 				<div class="col-md-5">		
@@ -986,6 +934,28 @@
 				</div>
 
 				
+				
+				
+
+
+				<div class="col-md-2" style="padding-top: 50px; padding-bottom: 75px;">
+					<a href="solicitud-feedback.html">
+						<button type="submit" name="pedir presupuestos" class="cta">PEDIR PRESUPUESTOS </button>
+					</a>
+				</div>
+
+			
+
+				<div class="col-md-5">
+
+				</div>
+			</div>
+
+			<div class="row filtros">
+				<div class="col-md-5">		
+				</div>
+
+
 				<div class="col-md-2" style="padding-top: 50px; padding-bottom: 75px;">
 					<a href="solicitud-feedback.html">
 						<div class="cta">
@@ -993,11 +963,15 @@
 						</div>	
 					</a>
 				</div>
-			
+
 
 				<div class="col-md-5">
 				</div>
 			</div>
+
+		</form>
+	</section>		
+
 
 
 
