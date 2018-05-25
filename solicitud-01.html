@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pedir presupuestos</title>
+	<title>Landing MeetnCheers</title>
 
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.min.css">
 
 	<!--FIN DE COSAS DEL SLIDER DE PRECIO-->
+
 	<link rel="stylesheet" type="text/css" href="css/solicitud.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
@@ -39,16 +40,27 @@
 					</div>
 				</div>
 
+				<div class="col-md-1">
+					<div>
+					</div>
+				</div>
+
+				<div class="col-md-6" id="status">
+					<div id="status-wrapper">
+						<img src="Assets/1-pedir.svg" width="445px">
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div>
+					</div>
+				</div>
+
+
 			</div>
 		</section>	
 
-<!-- STATUS BAR -->			
 
-		<section>
-			<div class="row filtros" id="status-bar">
-				
-			</div>
-		</section>
 
 <!-- FORMULARI/FILTROS -->
 
@@ -60,7 +72,7 @@
 				</div>
 
 				<div class="col-md-6">
-					<img src="Assets/group-14.svg">
+					<img src="Assets/icono-solicitar.svg">
 					<div style="padding-top: 15px">
 						<h1>Solicita tus presupuestos en 1 minuto</h1>
 						<h2>Cuéntanos qué necesitas y en 48h recibirás<br>3 presupuestos personalizados donde elegir</h2>
@@ -71,18 +83,20 @@
 				</div>
 			</div>
 
-<!-- NOMBRE DEL EVENTO -->				
+<!-- NOMBRE DEL EVENTO -->		
+
+		<form action="solicitud-02.html">		
 
 			<div class="row filtros" id="filtros-nombre" style="padding-top: 30px">
 				<div class="col-md-3">		
 				</div>
 
 				<div class="col-md-4">
-					<form>
+					
 					  	<div class="form-group">
 					  		<label for="extras">Nombre del evento</label>
 					  	</div>
-					 </form>
+					 
 				</div>	  	
 			</div>	
 
@@ -93,9 +107,8 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
-						<textarea class="form-control" rows="1" placeholder="Ej: Cena de navidad"></textarea>
-					</form>
+						<input required type="text" name="nombre" placeholder="Ej: Cena de Navidad" class="form-control" maxlength="40">
+					
 				</div>
 
 				<div class="col-md-5">		
@@ -131,39 +144,34 @@
 				<div class="col-md-3">	
 				</div>
 			</div>
-			
+
 
 			<div class="row filtros" id="filtros-cuando">
-
 				<div class="col-md-3">		
 				</div>
 
 				<div class="col-md-2">
-					<form action="/action_page.php">
-					  <input type="date" name="dia" id="dia">
-					</form>
-
+					
+					  <input required type="date" name="dia" id="dia">
+					
 
 					<div class="container" style="padding-top: 10px;">
 						<div class="row">
-						<form>
 							<fieldset style="padding-left: 5px;">
 								<input type="checkbox"><span>  Fecha provisional</span>
 							</fieldset>
-						</form>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-1">
 					<div class="dropdown-hora">
-						<form>
 						  <div class="form-group">
-								<select class="form-control selector" id="hora">
-									<option class="dropdown-label" selected disabled>Hora</option>
-								    <option class="dropdown-label">10:00h</option>
-								    <option class="dropdown-label">10:30h</option>
-								    <option class="dropdown-label">11:00h</option>
+								<select required class="form-control selector" id="hora">
+									<option selected disabled value="">Hora</option>
+								    <option value="random">10:00h</option>
+								    <option value="random">10:30h</option>
+								    <option value="random">11:00h</option>
 								    <option>11:30h</option>
 								    <option>12:00h</option>
                                     <option>12:30h</option>
@@ -191,17 +199,15 @@
                                     <option>00:00h</option>
 								</select>
 						  </div>
-						</form>
 					</div>
 				</div>	
 
 				<div class="col-md-3">
 					<div class="dropdown-asistentes">
-						<form>
 						  <div class="form-group">
-								<select class="form-control selector" id="asistentes">
-									<option selected disabled>Número aprox. asistentes</option>
-								    <option>2</option>
+								<select required class="form-control selector" id="asistentes">
+									<option selected disabled value="">Número aprox. asistentes</option>
+								    <option value="random">2</option>
 								    <option>3</option>
 								    <option>4</option>
 								    <option>5</option>
@@ -298,13 +304,13 @@
                                     <option>96</option>
                                     <option>97</option>
                                     <option>98</option>
-                                    <option>90</option>
+                                    <option>99</option>
                                     <option>100</option>
+                                    <option>+100</option>
                                     
                                     
 								</select>
 						  </div>
-						</form>
 					</div>
 				</div>
 
@@ -312,9 +318,6 @@
 				</div>
 				
 			</div>
-
-
-
 
 <!-- TIPO DE EVENTO -->				
 
@@ -324,20 +327,18 @@
 				</div>
 
 				<div class="col-md-3">
-					<form>
 					  <div class="form-group">
 					  		<label for="tipo-evento" style="padding-bottom: 8px">¿Qué tipo de evento vas a celebrar?</label>
-							<select class="form-control selector" id="fecha">
-								<option selected disabled>Ej: Comida de navidad</option>
-							    <option>Comida de navidad</option>
-							    <option>Comida de verano</option>
-							    <option>Comida con inversores</option>
-							    <option>Comida con clientes</option>
-                                <option>Celebración de algún hito</option>
-							    <option>Otros</option>
+							<select required class="form-control selector" id="fecha">
+								<option disabled selected value="">Seleccionar...</option>
+							    <option value="comidanavidad">Comida de navidad</option>
+							    <option value="comidaverano">Comida de verano</option>
+							    <option value="comidainversores">Comida con inversores</option>
+							    <option value="comidaclientes">Comida con clientes</option>
+                                <option value="celebracion">Celebración de algún hito</option>
+							    <option value="otros">Otros</option>
 							</select>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-6">		
@@ -353,11 +354,9 @@
 				</div>
 
 				<div class="col-md-4">
-					<form>
 					  <div class="form-group">
-					  		<label for="precio">Precio por asistente</label>
+					  		<label for="precio">Rango de precio por asistente</label>
 					  </div>
-					</form>
 				</div>
 
 				<div class="col-md-5">		
@@ -373,9 +372,9 @@
 
 				<div class="col-md-4">
 					  <div class="form-group">
-					  	<b class="pull-md-left">5€</b>	
+					  	<b class="pull-md-left"><span style="font-family: Raleway-Regular; font-size: 15px; font-weight: normal; color: #333333;"> 5€</span></b>	
 						<input id="bs-slider-2" type="text" value="" data-slider-min="5" data-slider-max="150" data-slider-step="5" data-slider-value="[5,150]">
-						<b class="pull-md-right">150€</b>
+						<b class="pull-md-right"><span style="font-family: Raleway-Regular; font-size: 15px; font-weight: normal; color: #333333;"> 150€</span></b>
 					  </div>
 				</div>
 
@@ -384,492 +383,53 @@
 				
 			</div>
 
-<!-- ZONA -->				
 
-			<div class="row filtros" id="filtros-zona" style="padding-top: 30px">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  	<div class="form-group">
-					  		<label for="zona">Zona</label>
-					  	</div>
-					 </form>
-				</div>	  	
-			</div>	
-
-
-
-
-			<div class="row filtros" id="filtros-zona">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>   Eixample Dret</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   Eixample Esquerra</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   St. Gervasi-Bonanova</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   Gràcia</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>   Born-La Ribera</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   La Barceloneta</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   Poble Sec-Montjuïc</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   Diagonal Mar</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>   Centro</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   Sarrià-Pedralbes</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   St. Gervasi-Santaló</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   El Gòtic</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-					  		<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>   Raval</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   Sants</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   Poblenou</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>   Vila Olímpica</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-1">		
-				</div>
-				
-			</div>
-
-<!-- AMBIENTE -->				
-
-			<div class="row filtros" id="filtros-ambiente" style="padding-top: 30px">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  	<div class="form-group">
-					  		<label for="ambiente">Ambiente</label>
-					  	</div>
-					 </form>
-				</div>	  	
-			</div>	
-
-
-
-
-			<div class="row filtros" id="filtros-ambiente">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Actual</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Clásico</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Con encanto</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Están de moda</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Emblemático</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Exclusivo</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Exótico</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Informal</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Moderno</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Romántico</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Tradicional</span>
-							</fieldset>
-							
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-3">		
-				</div>
-				
-			</div>
-
-<!-- TIPO DE COMIDA -->				
-
-			<div class="row filtros" id="filtros-tipo-comida" style="padding-top: 30px">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  	<div class="form-group">
-					  		<label for="tipo-comida">Tipo de comida</label>
-					  	</div>
-					 </form>
-				</div>	  	
-			</div>	
-
-
-
-
-			<div class="row filtros" id="filtros-ambiente">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Americano</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Árabe</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Asiático</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Arrocería</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Catalán</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Creativo</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Español</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Francés</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Gallego</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Indio</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Internacional</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Italiano</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Japonés</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Latino</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Marroquí</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-					  		<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Mediterráneo</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Mexicano</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Portugués</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Vasco</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Tapas</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-1">		
-				</div>
-				
-			</div>
-
-<!-- DIETAS ESPECIALES -->				
-
-			<div class="row filtros" id="filtros-dietas" style="padding-top: 30px">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-4">
-					<form>
-					  	<div class="form-group">
-					  		<label for="dietas">Infórmanos si necesitáis opciones para (opcional):</label>
-					  	</div>
-					 </form>
-				</div>	  	
-			</div>	
-
-
-
-
-			<div class="row filtros" id="filtros-dietas">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Celíacos</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Intolerantes lactosa</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Veganos</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Vegetarianos</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-5">		
-				</div>
-				
-			</div>
-
-
-
-<!-- SERVICIOS EXTRA -->				
-
-			<div class="row filtros" id="filtros-extras" style="padding-top: 30px">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-4">
-					<form>
-					  	<div class="form-group">
-					  		<label for="extras">Servicios extras (opcional)</label>
-					  	</div>
-					 </form>
-				</div>	  	
-			</div>	
-
-
-
-
-			<div class="row filtros" id="filtros-extras">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Proyector</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Televisor</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Micrófono</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-2">
-					<form>
-					  <div class="form-group">
-							<fieldset style="padding-left: 5px; padding-top: 0px;">
-								<input type="checkbox"><span>  Discoteca</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Karaoke</span>
-							</fieldset>
-							<fieldset style="padding-left: 5px; padding-top: 8px;">
-								<input type="checkbox"><span>  Espacio privado</span>
-							</fieldset>
-					  </div>
-					</form>
-				</div>
-
-				<div class="col-md-5">		
-				</div>
-				
-			</div>
-
-
-<!-- DETALLES -->				
-
-			<div class="row filtros" id="filtros-detalles" style="padding-top: 30px">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-4">
-					<form>
-					  	<div class="form-group">
-					  		<label for="extras">¿Algún detalle más que contarnos? (opcional)</label>
-					  	</div>
-					 </form>
-				</div>	  	
-			</div>	
-
-
-
-			<div class="row filtros" id="filtros-detalles">
-				<div class="col-md-3">		
-				</div>
-
-				<div class="col-md-6">
-					<form>
-						<textarea class="form-control" rows="4" placeholder="¡Escríbenos todos los detalles que quieras para dar en el clavo! No introduzcas tus datos de contacto para mantener tu privacidad."></textarea>
-					</form>
-				</div>
-
-				<div class="col-md-3">		
-				</div>
-			</div>
-
-		</section>	
-
-
-<!-- INTRO -->			
+<!-- CTA -->			
 
 		<section>
 			<div class="row filtros">
-				<div class="col-md-5">		
+				<div class="col-md-7">		
 				</div>
+
+				
+				
+				
+
 
 				<div class="col-md-2" style="padding-top: 50px; padding-bottom: 75px;">
-					<div class="cta">
-						PEDIR PRESUPUESTO
-					</div>	
+					
+						<button type="submit" name="siguiente" class="cta">SIGUIENTE</button>
+					
 				</div>
 
-				<div class="col-md-5">
+			
+
+				<div class="col-md-3">
+
 				</div>
 			</div>
+
+		
+
+		</form>
+	</section>		
+
+
 
 
 
 <script type="text/javascript">
 
-	//DIA//
-	
-	//FIN DE DIA//
-
 	// BARRA DE RANGO DE PRECIOS //
 
 	 $(function() {
 	    $('#bs-slider-2').slider({
-	      reversed: $('html').attr('dir') === 'rtl'
+	      reversed: $('html').attr('dir') === 'rtl',
+	      tooltip: 'show'	      
 	    });
 	  });
 
 	// FIN DE BARRA DE RANGO DE PRECIOS //
-
-
-
 
 </script>
 

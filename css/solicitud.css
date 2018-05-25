@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+
 *{
     font-family: 'Raleway', sans-serif;
 }
@@ -96,6 +98,25 @@ textarea {
     justify-content: center;
 
     height: 42px;
+    background: #00C9AF;
+    border: 1px solid #00C9AF;
+    border-radius: 100px;
+    font-family: Raleway-Medium;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.siguiente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 42px;
+    width: 130px;
     background: #00C9AF;
     border: 1px solid #00C9AF;
     border-radius: 100px;
