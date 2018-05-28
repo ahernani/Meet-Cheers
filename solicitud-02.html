@@ -68,7 +68,7 @@
 <!-- INTRO -->			
 
 		<section>
-			<div class="row filtros" id="filtros-intro">
+			<div class="row fondogris" id="filtros-intro">
 				<div class="col-md-3">		
 				</div>
 
@@ -91,7 +91,7 @@
 
 <!-- ZONA -->				
 
-			<div class="row filtros" id="filtros-zona" style="padding-top: 30px">
+			<div class="row fondogris" id="filtros-zona" style="padding-top: 30px">
 				<div class="col-md-3">		
 				</div>
 
@@ -105,7 +105,7 @@
 
 
 
-			<div class="row filtros" id="filtros-zona">
+			<div class="row fondogris" id="filtros-zona">
 				<div class="col-md-3">		
 				</div>
 
@@ -196,7 +196,7 @@
 
 <!-- AMBIENTE -->				
 
-			<div class="row filtros" id="filtros-ambiente" style="padding-top: 30px">
+			<div class="row fondogris" id="filtros-ambiente" style="padding-top: 30px">
 				<div class="col-md-3">		
 				</div>
 
@@ -210,7 +210,7 @@
 
 
 
-			<div class="row filtros" id="filtros-ambiente">
+			<div class="row fondogris" id="filtros-ambiente">
 				<div class="col-md-3">		
 				</div>
 
@@ -273,7 +273,7 @@
 
 <!-- TIPO DE COMIDA -->				
 
-			<div class="row filtros" id="filtros-tipo-comida" style="padding-top: 30px">
+			<div class="row fondogris" id="filtros-tipo-comida" style="padding-top: 30px">
 				<div class="col-md-3">		
 				</div>
 
@@ -287,7 +287,7 @@
 
 
 
-			<div class="row filtros" id="filtros-ambiente">
+			<div class="row fondogris" id="filtros-ambiente">
 				<div class="col-md-3">		
 				</div>
 
@@ -378,7 +378,7 @@
 
 <!-- DIETAS ESPECIALES -->				
 
-			<div class="row filtros" id="filtros-dietas" style="padding-top: 30px">
+			<div class="row fondogris" id="filtros-dietas" style="padding-top: 30px">
 				<div class="col-md-3">		
 				</div>
 
@@ -392,7 +392,7 @@
 
 
 
-			<div class="row filtros" id="filtros-dietas">
+			<div class="row fondogris" id="filtros-dietas">
 				<div class="col-md-3">		
 				</div>
 
@@ -429,7 +429,7 @@
 
 <!-- SERVICIOS EXTRA -->				
 
-			<div class="row filtros" id="filtros-extras" style="padding-top: 30px">
+			<div class="row fondogris" id="filtros-extras" style="padding-top: 30px">
 				<div class="col-md-3">		
 				</div>
 
@@ -443,7 +443,7 @@
 
 
 
-			<div class="row filtros" id="filtros-extras">
+			<div class="row fondogris" id="filtros-extras">
 				<div class="col-md-3">		
 				</div>
 
@@ -488,7 +488,7 @@
 
 <!-- DETALLES -->				
 
-			<div class="row filtros" id="filtros-detalles" style="padding-top: 30px">
+			<div class="row fondogris" id="filtros-detalles" style="padding-top: 30px">
 				<div class="col-md-3">		
 				</div>
 
@@ -501,7 +501,7 @@
 
 
 
-			<div class="row filtros" id="filtros-detalles">
+			<div class="row fondogris" id="filtros-detalles">
 				<div class="col-md-3">		
 				</div>
 
@@ -522,32 +522,48 @@
 <!-- CTA -->			
 
 		<section>
-			<div class="row filtros">
-				<div class="col-md-5">		
+			<div class="row fondogris">
+				<div class="col-md-3">		
 				</div>
 
 				
-				
+				<div class="col-md-3" style="padding-top: 50px; padding-bottom: 75px;">
+					<a href="#" onClick="history.go(-1);return true;">
+						<div class="atras">
+							<div style="width: 100px; display: flex; justify-content: center;">
+								<img src="Assets/flecha-atras.svg" style="text-align: right;">
+								ATRÁS
+							</div>	
+						</div>
+					</a>
+				</div>
 				
 
 
-				<div class="col-md-2" style="padding-top: 50px; padding-bottom: 75px;">
-						<button type="submit" name="pedir presupuestos" class="cta">SIGUIENTE</button>
+				<div class="col-md-3" style="padding-top: 50px; padding-bottom: 75px;">
+					
+						<button type="submit" name="siguiente" class="siguiente">
+							<div style="width: 100px; display: flex; justify-content: center;">
+								SIGUIENTE
+								<img src="Assets/flecha-siguiente.svg" style="text-align: right;">
+							</div>	
+						</button>
 				</div>
 
 			
 
-				<div class="col-md-5">
+				<div class="col-md-3">
 
 				</div>
 			</div>
-
-			
+		</section>
 
 	</form>
-	</section>	
+
+	
 
 	<script type="text/javascript">
+
 		$('document').ready(function(){
 		   $("#checkTodos1").change(function () {
 		      $(".check1").prop('checked', $(this).prop("checked"));
@@ -565,6 +581,7 @@
 		      $(".check3").prop('checked', $(this).prop("checked"));
 		  });
 		});
+
 	</script>
 
 
