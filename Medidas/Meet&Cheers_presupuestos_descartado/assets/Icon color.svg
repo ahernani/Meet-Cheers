@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon color</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="19.881853 0 10.4992103 9.38334838 1.11656765 0 0 1.11665162 9.3826427 10.5 0 19.8833484 1.11656765 21 10.4992103 11.6166516 19.881853 21 21 19.8833484 11.615778 10.5 21 1.11665162"></polygon>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.2-Presupuestos-Descartar" transform="translate(-950.000000, -274.000000)">
+            <g id="Cerrar" transform="translate(896.000000, 274.000000)">
+                <g id="Icon-color" transform="translate(54.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Atoms/Mixin/Color/General/000" mask="url(#mask-2)" fill="#333333">
+                        <g transform="translate(-9.000000, -9.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="38" height="38.376"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
