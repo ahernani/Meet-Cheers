@@ -5,7 +5,8 @@
 }
 
 h1{
-    font-family: Raleway-Bold;
+    font-family: Raleway;
+    font-weight: 500;
     font-size: 25px;
     color: #ED8C04;
     letter-spacing: 1.55px;
@@ -13,7 +14,8 @@ h1{
 }
 
 h2{
-    font-family: Raleway-Medium;
+    font-family: Raleway;
+    font-weight: 500;
     font-size: 20px;
     color: #ED8C04;
     letter-spacing: 1.55px;
@@ -21,7 +23,8 @@ h2{
 }
 
 h3{
-    font-family: Raleway-Bold;
+    font-family: Raleway;
+    font-weight: 700;
     font-size: 25px;
     color: #666666;
     letter-spacing: 1.55px;
@@ -29,7 +32,8 @@ h3{
 }
 
 h4{
-    font-family: Raleway-Medium;
+    font-family: Raleway;
+    font-weight: 500;
     font-size: 20px;
     color: #666666;
     letter-spacing: 1.55px;
@@ -43,20 +47,14 @@ img {
 }
 
 label {
-    font-family: Raleway-Bold;
+    font-family: Raleway;
+    font-weight: 700;
     font-size: 15px;
     color: #333333;
     letter-spacing: 0;
     line-height: 18px;
 }
 
-
-select {
-   /*-webkit-appearance: none; 
-   -moz-appearance: none;
-    appearance: none; */      /* remove default arrow */
-   /*background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iOHB4IiB2aWV3Qm94PSIwIDAgMTYgOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTAgKDU0OTgzKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5Ecm9wZG93biBhcnJvdzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPgogICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoLTEiIHBvaW50cz0iOC4wMDEgMC45NDYgMTUuMzU0IDguMyAxNC42NDcgOS4wMDcgOC4wMDEgMi4zNiAxLjM1NSA5LjAwNyAwLjY0NyA4LjMiPjwvcG9seWdvbj4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iTW9sZWN1bGVzL2Ryb3Bkb3duLWNhbGVuZGFyL2Nsb3NlZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE0NS4wMDAwMDAsIC0xOC4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9IkRyb3Bkb3duLWFycm93IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTMuMDAwMDAwLCAyMi4wMDAwMDApIHNjYWxlKDEsIC0xKSB0cmFuc2xhdGUoLTE1My4wMDAwMDAsIC0yMi4wMDAwMDApIHRyYW5zbGF0ZSgxNDEuMDAwMDAwLCAxMC4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJhcnJvdy1kb3duLWNvcHkiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJpY29uLWFyZWEiIHg9IjAiIHk9IjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PC9yZWN0PgogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJBdG9tcy9NaXhpbi9Db2xvci9HZW5lcmFsLzAwMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNC4wMDAwMDAsIDcuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvbWFzaz4KICAgICAgICAgICAgICAgICAgICAgICAgPHVzZSBpZD0iTWFzayIgZmlsbD0iIzMzMzMzMyIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJBdG9tcy9Db2xvci9HZW5lcmFsLzAwMCIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjMDAwMDAwIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00LjAwMDAwMCwgLTcuMDAwMDAwKSIgaWQ9IlJlY3RhbmdsZSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48L3JlY3Q+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);   /* add custom arrow */
-}
 
 input {
     font-family: Raleway;
@@ -70,7 +68,11 @@ textarea {
    resize: none;
 }
 
-.filtros {
+a {
+    text-decoration: none;
+}
+
+.fondogris {
     background: rgba(236,236,236,0.46);
 }
 
@@ -85,7 +87,8 @@ textarea {
 }
 
 .dropdown-label {
-    font-family: Raleway-Medium;
+    font-family: Raleway;
+    font-weight: 500;
     font-size: 13px;
     color: #333333;
     letter-spacing: 0;
@@ -101,13 +104,20 @@ textarea {
     background: #00C9AF;
     border: 1px solid #00C9AF;
     border-radius: 100px;
-    font-family: Raleway-Medium;
+    font-family: Raleway;
+    font-weight: 500;
     font-size: 13px;
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+.cta:hover {
+    background: #03B59E;   
 }
 
 .siguiente {
@@ -120,13 +130,37 @@ textarea {
     background: #00C9AF;
     border: 1px solid #00C9AF;
     border-radius: 100px;
-    font-family: Raleway-Medium;
+    font-family: Raleway;
+    font-weight: 500;
     font-size: 13px;
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 15px;
+}
+.siguiente:hover {
+    background: #03B59E;
+}
+
+.atras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 42px;
+    width: 130px;
+    background: #FFFFFF;
+    border: 1px solid #00C9AF;
+    border-radius: 100px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 13px;
+    color: #00C9AF;
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 30px;
 }
 
 a.cta:hover {
@@ -139,7 +173,8 @@ a.cta:hover {
     background: #03B59E;
     border: 1px solid #03B59E;
     border-radius: 100px;
-    font-family: Raleway-Medium;
+    font-family: Raleway;
+    font-weight: 500;
     font-size: 13px;
     color: #FFFFFF;
     letter-spacing: 0;
@@ -301,7 +336,7 @@ input[type='checkbox']:checked + span{
 }
 
 .pull-md-left {
-    font-family: Raleway-Regular;
+    font-family: Raleway;
     font-size: 16px;
     color: #333333;
 }
