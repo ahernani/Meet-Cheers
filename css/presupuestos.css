@@ -4,6 +4,11 @@
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+	text-decoration: none;
+	text-decoration-line: none;
+}
+
 h1 {
 	font-family: Raleway;
 	font-weight: 700;
@@ -42,6 +47,32 @@ h4 {
 	line-height: 18px;
 }
 
+h5 {
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 17px;
+	color: #333333;
+	letter-spacing: 0;
+	line-height: 18px;
+}
+
+h6 {
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 15px;
+	color: #333333;
+	letter-spacing: 0;
+	line-height: 18px;
+}
+
+p {
+	font-family: Raleway;
+	font-weight: 500;
+	font-size: 13px;
+	color: #333333;
+	letter-spacing: 0;
+	line-height: 18px;
+}
 
 .fondogris {
     background: rgba(236,236,236,0.46);
@@ -108,6 +139,24 @@ h4 {
 	padding-left: 18px;
 }
 
+.separador-resumen {
+	height: 134px;
+	border-left: 1px solid #CCCCCC;
+	padding-left: 18px;
+}
+
+.separador-detalle {
+	height: 100%;
+	border-left: 1px solid #CCCCCC;
+}
+
+
+.separador-horizontal {
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 18px;
+}
+
 .cta {
     position: absolute;
    	bottom: 0;
@@ -137,6 +186,50 @@ h4 {
     background: #03B59E;   
 }
 
+.cta-reservar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 42px;
+    width: 120px;
+    background: #00C9AF;
+    border: 1px solid #00C9AF;
+    border-radius: 100px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+.cta-reservar:hover {
+    background: #03B59E;   
+}
+
+.cta-descartar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 42px;
+    width: 120px;
+    background: #FFFFFF;
+    border: 1px solid #00C9AF;
+	border-radius: 100px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 13px;
+    color: #00C9AF;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
 #header {
     height: 80px;
     background: #FFFFFF;
@@ -162,3 +255,25 @@ h4 {
 #status, #status-wrapper {
     height: 100%;
 }
+
+#cerrar {
+    padding-left: inherit;
+    padding-right: inherit;
+    position: absolute;
+    right: 0;
+}
+
+#menu {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#total {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

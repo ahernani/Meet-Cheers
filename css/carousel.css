@@ -1,0 +1,122 @@
+.carousel img {max-height: 300px;
+                }
+
+.carousel-caption {background: white;
+                    width:100%;
+                    color: black;
+                    bottom:0px;
+                    left: 0px;
+                    right:0px;
+                    text-shadow: none;
+                }
+.carousel-control {max-width: 50px;
+                    border-radius: 100%;
+                    max-height: 50px;
+                    line-height: 50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+.carousel-control a {text-align: center;
+    background-color: white;
+    background-image: none;
+                }
+
+.carousel-control a span  {position: absolute;
+    top: 10px;
+    left: 20px;
+     }
+
+.margin-bottom-20 {
+  margin-bottom: 20px
+}
+
+.action-button {position: fixed;
+        bottom: 0px;
+        background: white;
+        z-index: 1;
+      }
+
+@media only screen and (max-width: 780px) {
+
+  .action-button {
+        bottom: 50px;
+
+      }
+
+}
+
+
+
+#carrousel {
+    min-height: 600px;
+background-image: url(img/slide.jpg);
+background-position:center;
+background-repeat:no-repeat;  
+text-align: center;
+width: 100%
+}
+
+
+#carrousell .buscar{
+    margin-top: 10px; 
+    margin-bottom: 0;
+}
+
+#carrousell .input-group{
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+
+.itemRow{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.item-increment, .item-decrement{
+                margin: 20px;
+                padding: 6px 12px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1;
+                color: #555;
+                text-align: center;
+                background-color: #eee;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                }
+.item-quantity{border:1px solid #FF3300;
+                text-align: center;
+                width: 50px
+                }
+
+.item-name {font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 1.1;
+            width: 100%;
+}
+
+@media only screen and (min-width: 780px) {
+
+   .simpleCart_items { 
+                    width: 50%;
+                    margin-left:25%;
+                            }
+
+            }
+
+.simpleCart_items td{ min-width: 20px;
+                    height: 60px;
+                    padding: 20px
+}
+
+.item-total {
+            font-weight: 600;
+}
+
+.item-remove{
+            font-weight: 800;
+            background-color: #eee

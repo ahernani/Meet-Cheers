@@ -55,6 +55,16 @@ label {
     line-height: 18px;
 }
 
+label.checkbox {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 15px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 18px;
+    min-width: 200px;
+}
+
 
 input {
     font-family: Raleway;
