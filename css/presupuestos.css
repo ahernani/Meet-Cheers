@@ -186,6 +186,31 @@ p {
     background: #03B59E;   
 }
 
+.cta-inactive {
+    position: absolute;
+   	bottom: 0;
+
+
+    display: flex;
+    align-items: center;
+   
+    height: 42px;
+    width: 128px;
+    background: #00C9AF;
+    border: 1px solid #00C9AF;
+    border-radius: 100px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 15px;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
 .cta-reservar {
     display: flex;
     align-items: center;
@@ -210,11 +235,28 @@ p {
     background: #03B59E;   
 }
 
+
 .cta-descartar {
+    height: 42px;
+    width: 120px;
+    background: #FFFFFF;
+    border: 1px solid #00C9AF;
+	border-radius: 100px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 13px;
+    color: #00C9AF;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+.modal-boton1 {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
     height: 42px;
     width: 120px;
     background: #FFFFFF;
@@ -275,5 +317,70 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+#mail {
+	width: 100%;
+	background-image: url(Assets/mail1-desktop.svg);
+}
+
+@media screen and (max-width: 767px) {   
+    #mail1{
+    	background-image: url(Assets/mail1-mobile.svg);
+    } 
+}
+
+
+/* MODAL*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+    padding: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+}
+
+/* The Close Button */
+.close {
+    float: right;
+
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-cerrar {
+	padding-left: inherit;
+	padding-right: inherit;
+    position: absolute;
+    right: 0;
+}
+
+
+/*FI MODAL*/
+
+
+
 
 
