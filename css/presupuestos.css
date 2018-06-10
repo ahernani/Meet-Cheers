@@ -74,6 +74,15 @@ p {
 	line-height: 18px;
 }
 
+label {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 15px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
 .fondogris {
     background: rgba(236,236,236,0.46);
 }
@@ -252,6 +261,28 @@ p {
     text-decoration: none;
 }
 
+.reservar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 42px;
+    width: 120px;
+    background: #00C9AF;
+    border: 1px solid #00C9AF;
+    border-radius: 100px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
 .modal-boton1 {
     display: flex;
     align-items: center;
@@ -352,7 +383,7 @@ p {
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 40px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     max-width: 500px;
@@ -377,6 +408,12 @@ p {
     right: 0;
 }
 
+#modal-cerrar-2 {
+	padding-left: inherit;
+	padding-right: inherit;
+    position: absolute;
+    right: 0;
+}
 
 /*FI MODAL*/
 
