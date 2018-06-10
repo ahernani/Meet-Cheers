@@ -1,122 +1,78 @@
-.carousel img {max-height: 300px;
-                }
+@media (min-width: 768px) {
 
-.carousel-caption {background: white;
-                    width:100%;
-                    color: black;
-                    bottom:0px;
-                    left: 0px;
-                    right:0px;
-                    text-shadow: none;
-                }
-.carousel-control {max-width: 50px;
-                    border-radius: 100%;
-                    max-height: 50px;
-                    line-height: 50px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-.carousel-control a {text-align: center;
-    background-color: white;
-    background-image: none;
-                }
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
 
-.carousel-control a span  {position: absolute;
-    top: 10px;
-    left: 20px;
-     }
-
-.margin-bottom-20 {
-  margin-bottom: 20px
 }
 
-.action-button {position: fixed;
-        bottom: 0px;
-        background: white;
-        z-index: 1;
-      }
+ /* Bootstrap Lightbox using Modal */
 
-@media only screen and (max-width: 780px) {
-
-  .action-button {
-        bottom: 50px;
-
-      }
-
-}
-
-
-
-#carrousel {
-    min-height: 600px;
-background-image: url(img/slide.jpg);
-background-position:center;
-background-repeat:no-repeat;  
-text-align: center;
-width: 100%
-}
-
-
-#carrousell .buscar{
-    margin-top: 10px; 
-    margin-bottom: 0;
-}
-
-#carrousell .input-group{
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-}
-
-
-.itemRow{
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.item-increment, .item-decrement{
-                margin: 20px;
-                padding: 6px 12px;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 1;
-                color: #555;
-                text-align: center;
-                background-color: #eee;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                }
-.item-quantity{border:1px solid #FF3300;
-                text-align: center;
-                width: 50px
-                }
-
-.item-name {font-size: 24px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-weight: 500;
-            line-height: 1.1;
-            width: 100%;
-}
-
-@media only screen and (min-width: 780px) {
-
-   .simpleCart_items { 
-                    width: 50%;
-                    margin-left:25%;
-                            }
-
-            }
-
-.simpleCart_items td{ min-width: 20px;
-                    height: 60px;
-                    padding: 20px
-}
-
-.item-total {
-            font-weight: 600;
-}
-
-.item-remove{
-            font-weight: 800;
-            background-color: #eee
+#profile-grid { overflow: auto; white-space: normal; } 
+#profile-grid .profile { padding-bottom: 40px; }
+#profile-grid .panel { padding: 0 }
+#profile-grid .panel-body { padding: 15px }
+#profile-grid .profile-name { font-weight: bold; }
+#profile-grid .thumbnail {margin-bottom:6px;}
+#profile-grid .panel-thumbnail { overflow: hidden; }
+#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
