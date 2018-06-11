@@ -180,15 +180,89 @@
 								</div>	
 							</div>
 
-							<div class="row">
-							      <div class="col-md-12 heroSlider-fixed">
-							        <div class="overlay">
-							      </div>
-							         <!-- Slider -->
+							<!--SLIDER-->
 
-											
-							      </div>
+
+							<div class="container-fluid">
+							    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+							        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+							            <div class="carousel-item col-md-3  active">
+							               <div class="panel panel-default">
+							                  <div class="panel-thumbnail">
+							                    <a href="#" title="image 1" class="thumb">
+							                      <img class="img-fluid mx-auto d-block" src="Assets/Ferrum/ferrum-1.jpg" alt="slide 1">
+							                    </a>
+							                  </div>
+							                </div>
+							            </div>
+							            <div class="carousel-item col-md-3 ">
+							               <div class="panel panel-default">
+							                  <div class="panel-thumbnail">
+							                    <a href="#" title="image 3" class="thumb">
+							                     <img class="img-fluid mx-auto d-block" src="Assets/Ferrum/ferrum-2.jpg" alt="slide 2">
+							                    </a>
+							                  </div>
+							                </div>
+							            </div>
+							            <div class="carousel-item col-md-3 ">
+							               <div class="panel panel-default">
+							                  <div class="panel-thumbnail">
+							                    <a href="#" title="image 4" class="thumb">
+							                     <img class="img-fluid mx-auto d-block" src="Assets/Ferrum/ferrum-3.jpg" alt="slide 3">
+							                    </a>
+							                  </div>
+							                </div>
+							            </div>
+							            <div class="carousel-item col-md-3 ">
+							                <div class="panel panel-default">
+							                  <div class="panel-thumbnail">
+							                    <a href="#" title="image 5" class="thumb">
+							                     <img class="img-fluid mx-auto d-block" src="Assets/Ferrum/ferrum-4.gif" alt="slide 4">
+							                    </a>
+							                  </div>
+							                </div>
+							            </div>
+							            <div class="carousel-item col-md-3 ">
+							              <div class="panel panel-default">
+							                  <div class="panel-thumbnail">
+							                    <a href="#" title="image 6" class="thumb">
+							                      <img class="img-fluid mx-auto d-block" src="Assets/Ferrum/ferrum-5.jpg" alt="slide 5">
+							                    </a>
+							                  </div>
+							                </div>
+							            </div>
+							            <div class="carousel-item col-md-3 ">
+							               <div class="panel panel-default">
+							                  <div class="panel-thumbnail">
+							                    <a href="#" title="image 7" class="thumb">
+							                      <img class="img-fluid mx-auto d-block" src="Assets/Ferrum/ferrum-6.jpg" alt="slide 6">
+							                    </a>
+							                  </div>
+							                </div>
+							            </div>
+							            <div class="carousel-item col-md-3 ">
+							               <div class="panel panel-default">
+							                  <div class="panel-thumbnail">
+							                    <a href="#" title="image 7" class="thumb">
+							                      <img class="img-fluid mx-auto d-block" src="Assets/Ferrum/ferrum-7.jpg" alt="slide 7">
+							                    </a>
+							                  </div>
+							                </div>
+							            </div>
+							            
+							        </div>
+							        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+							            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							            <span class="sr-only">Previous</span>
+							        </a>
+							        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+							            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							            <span class="sr-only">Next</span>
+							        </a>
 							    </div>
+							</div>
+
+							<!-- FIN SLIDER-->
 						</div>
 
 
@@ -334,6 +408,52 @@
 
 
 		<script>
+		//SLIDER//
+
+		$('#carouselExample').on('slide.bs.carousel', function (e) {
+
+		  
+		    var $e = $(e.relatedTarget);
+		    var idx = $e.index();
+		    var itemsPerSlide = 4;
+		    var totalItems = $('.carousel-item').length;
+		    
+		    if (idx >= totalItems-(itemsPerSlide-1)) {
+		        var it = itemsPerSlide - (totalItems - idx);
+		        for (var i=0; i<it; i++) {
+		            // append slides to end
+		            if (e.direction=="left") {
+		                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+		            }
+		            else {
+		                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+		            }
+		        }
+		    }
+		});
+
+
+		  $('#carouselExample').carousel({ 
+		                interval: 2000
+		        });
+
+
+		  $(document).ready(function() {
+		/* show lightbox when clicking a thumbnail */
+		    $('a.thumb').click(function(event){
+		      event.preventDefault();
+		      var content = $('.modal-body');
+		      content.empty();
+		        var title = $(this).attr("title");
+		        $('.modal-title').html(title);        
+		        content.html($(this).html());
+		        $(".modal-profile").modal({show:true});
+		    });
+
+		  });
+
+		  //FIN SLIDER//
+
 		// Get the modal
 		var modal = document.getElementById('modal-descartar');
 
