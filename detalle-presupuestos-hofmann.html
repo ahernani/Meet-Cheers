@@ -218,7 +218,7 @@
 							                <div class="panel panel-default">
 							                  <div class="panel-thumbnail">
 							                    <a href="#" title="image 5" class="thumb">
-							                     <img class="img-fluid mx-auto d-block" src="Assets/Taverna/hofmann-4.jpg" alt="slide 4">
+							                     <img class="img-fluid mx-auto d-block" src="Assets/Taverna/presu-taverna-portada.jpg" alt="slide 4">
 							                    </a>
 							                  </div>
 							                </div>
@@ -327,18 +327,19 @@
 
 								<div class="row" style="padding: 18px;">
 									<div class="col-md-5" style="padding-top: 10px; padding-left: 24px;">
-										<button class="cta-descartar" id="btn-descartar">
+
+										
+											<button class="cta-descartar" id="btn-descartar" data-toggle="modal" data-target="#modal-descartar">
 												DESCARTAR
 											</button>
 											
 
 											<!-- The Modal -->
-											<div id="modal-descartar" class="modal">
+											<div id="modal-descartar" class="modal fade" role="dialog">
 
 											  <!-- Modal content -->
 											  <div class="modal-content">
 											    
-												<img src="Assets/cerrar.svg" id="modal-cerrar" class="close">	
 												
 											    <span style="font-family: Raleway; font-weight: 700; font-size: 18px; color: #666666; letter-spacing: 1.55px; text-align: center; padding-top: 30px;"> ¿Estás seguro que quieres <br>descartar este presupuesto? </span>
 
@@ -363,26 +364,69 @@
 															</div>
 														</a>	
 													</div>		
-
 												</div>
-
 											  </div>
-
 											</div>
+										
 									</div>
 
 									<div class="col-md-1">
 									</div>
 
 									<div class="col-md-5" style="padding-top: 10px; margin-right: -10px;">
-										<a href="">
-											<div class="cta-reservar">
-												RESERVAR
+											<button class="cta-reservar" id="btn-reservar" data-toggle="modal" data-target="#modal-reservar">
+											RESERVAR
+										</button>	
+
+											<!-- The Modal -->
+										<div id="modal-reservar" class="modal">
+
+											  <!-- Modal content -->
+											<div class="modal-content">
+											    
+													
+												
+												<span style="font-family: Raleway; font-weight: 700; font-size: 25px; color: #666666; letter-spacing: 1.55px; text-align: center; padding-top: 30px;"> ¡Ya estamos casi listos!</span>
+													    
+
+												<span style="font-family: Raleway; font-weight: 500; font-size: 16px; color: #666666; letter-spacing: 1.55px; text-align: center; padding-top: 15px;"> Sólo nos falta que confirmes tu nombre y tu número de teléfono y tendrás tu reserva.</span>
+
+												<br>
+
+											    			<!-- Tu nombre -->				
+											    <form action="confirmacion-reserva-hofmann.html">
+													<div class="col-xs-12">
+														<label for="extras">Tu nombre y apellido</label>
+													</div>
+
+													<div class="col-xs-12">
+														<input required type="text" name="nombre" placeholder="Nombre y apellido" class="form-control" maxlength="40">
+													</div>
+
+													<br>
+
+													<div class="col-xs-12">
+														<label for="extras">Teléfono de contacto</label>
+													</div>
+
+													<div class="col-xs-12">
+														<input required type="text" name="nombre" placeholder="Teléfono de contacto" class="form-control" maxlength="9">
+													</div>
+														
+
+											    	<div class="col-xs-12" style="padding-top: 40px; padding-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+														<button type="submit" name="pedir presupuestos" class="reservar">
+															RESERVAR	
+														</button>	
+													</div>	
+												</form>		
+												
+
+
 											</div>
-										</a>	
+										</div>
 									</div>			
 								</div>	
-								
 							</div>	
 
 
