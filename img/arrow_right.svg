@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="38px" viewBox="0 0 24 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1242.000000, -1855.000000)" fill="#ED8C04" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="3">
+            <path d="M1263.45466,1858.01407 C1262.80612,1857.36481 1261.92608,1857 1261.0084,1857 C1260.09072,1857 1259.21068,1857.36481 1258.56214,1858.01407 L1245.01407,1871.5679 C1244.36481,1872.21644 1244,1873.09648 1244,1874.01416 C1244,1874.93185 1244.36481,1875.81189 1245.01407,1876.46042 L1258.5679,1890.0085 C1259.92208,1891.33928 1262.09601,1891.32917 1263.43775,1889.98585 C1264.77949,1888.64252 1264.78704,1886.46858 1263.45466,1885.11598 L1252.34997,1874.01128 L1263.45466,1862.90659 C1264.10392,1862.25805 1264.46873,1861.37801 1264.46873,1860.46033 C1264.46873,1859.54265 1264.10392,1858.66261 1263.45466,1858.01407 Z" id="Shape" style="mix-blend-mode: multiply;" transform="translate(1254.234366, 1874.000000) scale(-1, 1) translate(-1254.234366, -1874.000000) "></path>
+        </g>
+    </g>
+</svg>

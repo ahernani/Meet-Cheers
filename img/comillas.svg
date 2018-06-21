@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="27px" viewBox="0 0 34 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>“</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.8%" y="-1.5%" width="103.6%" height="104.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.265681612 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-879.000000, -1757.000000)" fill="#CCCCCC">
+            <g id="Group-7" transform="translate(849.000000, 1729.000000)">
+                <g id="Group-6" filter="url(#filter-1)">
+                    <g id="Group-4" transform="translate(34.000000, 30.000000)">
+                        <path d="M11.0600496,13.8879032 C11.0600496,16.7157568 8.73492556,19.0408809 5.90707196,19.0408809 C1.82239454,19.0408809 0,15.3960918 0,11.1228908 C0,6.84968983 1.25682382,4.71308933 3.20490074,2.70217122 C4.14751861,1.82239454 6.97537221,0 8.92344913,0 C10.3059553,0 11.0600496,0.879776675 11.0600496,1.88523573 C11.0600496,4.65024814 4.71308933,3.20490074 4.39888337,9.61470223 C4.96445409,9.30049628 5.6557072,9.04913151 6.53548387,9.04913151 C9.42617866,9.04913151 11.0600496,11.3742556 11.0600496,13.8879032 Z M25.325,13.8879032 C25.325,16.7157568 22.9998759,19.0408809 20.1720223,19.0408809 C16.0873449,19.0408809 14.2649504,15.3960918 14.2649504,11.1228908 C14.2649504,6.84968983 15.5217742,4.71308933 17.4698511,2.70217122 C18.412469,1.82239454 21.2403226,0 23.1883995,0 C24.5709057,0 25.325,0.879776675 25.325,1.88523573 C25.325,4.65024814 18.9780397,3.20490074 18.6638337,9.61470223 C19.2294045,9.30049628 19.9206576,9.04913151 20.8004342,9.04913151 C23.691129,9.04913151 25.325,11.3742556 25.325,13.8879032 Z" id="“"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,418 @@
+html, body{
+    font-family: 'Raleway', sans-serif;
+    color: #666666;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: , 'Raleway', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h2 {
+    font-size: 34px; 
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 150%;
+}
+
+título3 {
+    font-size: 65px;
+}
+
+hr{
+    border-top: 2px solid #666666;
+    width: 63px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#main {
+    background-image: url('../img/background_color.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#header {
+    border-width: 0px;
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: white;
+    height: 75px;
+}
+
+.cta {
+    height: 42px;
+    width: 250px;
+    background: #00C9AF;
+    border: 1px solid #00C9AF;
+    border-radius: 100px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#logo-wrapper {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boton-wrapper {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eresrestaurante {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: right;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 990px) {
+      .eresrestaurante { 
+          visibility: hidden; 
+    }
+}
+
+#logo, #logo-wrapper, #masinformacion, #boton, #boton-wrapper, #eresrestaurante, #eres-wrapper, {
+    height: 100%;
+}
+
+#main-info {
+    background-image: url('../img/laptop.svg');
+    background-repeat: no-repeat;
+    background-position: right center; 
+    height: 700px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+      #main-info { 
+          background-size: 50%; 
+    }
+}
+
+@media only screen and (max-width: 900px) {
+      #main-info { 
+          background: none; 
+    }
+}
+
+.principal {
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Raleway';
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.slogan {
+    text-align: left;
+    font-size: 35px;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.empezar {
+    height: 42px;
+    width: 220px;
+    background: #00C9AF;
+    border: 1px solid #00C9AF;
+    border-radius: 100px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.flechadown {
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+      .flechadown { 
+          visibility: hidden; 
+    }
+}
+
+#triggers {
+    background-color: #ECECEC;
+}
+
+.campotexto {
+    max-width: 300px;
+    text-align: center;
+    font-size: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#pasos {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotopasos {
+    max-width: 300px;
+    font-size: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+#chica {
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-left: 85xpx;
+}
+
+.números {
+    padding-top: 25px;
+}
+
+.circulo {
+    height: 72px;
+    width: 72px;
+    background: rgb(113,200,175, .2);
+    border: 2px solid #00C9AF;
+    border-radius: 100px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 38px;
+    color: #00C9AF;
+    letter-spacing: 0;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.flecha {
+    text-align: left;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.campotextopasos {
+    max-width: 300px;
+    text-align: center;
+    font-size: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+#presupuestos {
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.trespasos {
+    max-width: 500px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #00C9AF;
+    text-align: center;
+    margin: auto;
+}
+
+#slide {
+    background-color: #ececec;
+}
+
+
+#caja {
+    max-width: 400px;
+    max-height: 350px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    overflow: hidden;
+
+
+    -webkit-box-shadow: 2px 2px 5px 1px rgba(212,212,212,0.76);
+    -moz-box-shadow: 2px 2px 5px 1px rgba(212,212,212,0.76);
+    box-shadow: 2px 2px 5px 1px rgba(212,212,212,0.76);
+}
+
+.campotextocajas {
+    width: 100%
+    height: auto;
+    max-width: 375px;
+    text-align: left;
+    font-size: 25px;
+    color: #666666;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.campofoto {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.textocajas {
+    padding-top: 10px;
+}
+
+#datos {
+    background-image: url('../img/foto_woman.svg');
+    background-repeat: no-repeat;
+    background-position: right center; 
+    background-color: #00C9AF;
+    height: 407px;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+      #datos { 
+          background-image: none; 
+    }
+}
+
+.textowomansup, .textowomaninf {
+    text-align: left;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#foot {
+    max-height: 158px;
+    height: 100%;
+}
+
+.fotologofoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 25px;
+}
+
+#footer {
+    border-width: 0px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: darkgray;
+    margin-bottom: 12px;
+}
+
+.textofooter {
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-align: center;
+    color: darkgrey;
+    font-size: 16px;
+    padding-right: 45px;
+    padding-top: 15px;
+}
