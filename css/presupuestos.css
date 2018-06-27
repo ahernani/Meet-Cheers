@@ -175,6 +175,11 @@ label {
 	border-left: 1px solid #CCCCCC;
 }
 
+.separador-mobile {
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+}
+
 
 .separador-horizontal {
 	width: 100%;
@@ -237,6 +242,27 @@ label {
    	bottom: 0;
 
 
+    display: flex;
+    align-items: center;
+   
+    height: 42px;
+    width: 128px;
+    background: #00C9AF;
+    border: 1px solid #00C9AF;
+    border-radius: 100px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 15px;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+.cta-mobile-inactive {
     display: flex;
     align-items: center;
    

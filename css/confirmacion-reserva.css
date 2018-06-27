@@ -59,23 +59,33 @@ h4{
 	border-radius: 11px;
 }
 
+.resumen-mobile {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 12px;
+    color: #9B9B9B;
+    letter-spacing: 1.55px;
+
+    display: flex;
+    align-items: center;
+}
 
 
 
 
 #header {
-    height: 80px;
     background: #FFFFFF;
     box-shadow: 0 6px 15px 0 rgba(182,182,182,0.50);
 }
 
 #logo-wrapper {
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#logo, #logo-wrapper {
+#logo {
     height: 100%;
 }
 
@@ -83,11 +93,23 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 80px;
 }
 
-#status, #status-wrapper {
+#status, {
     height: 100%;
 }
+
+#status-img {
+    width: 100%;
+    max-width: 445px;
+    
+    @include media-breakpoint-down(xs) { 
+        width: 50%;
+        background: #000;
+    }
+}
+
 
 #separador-1 {
 	margin-left: 20px;
@@ -110,5 +132,18 @@ h4{
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 46px;
+}
+
+#total-mobile {
+    background: rgba(237,140,4,0.19);
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+}
+
+.float-right {
+	float: right;
 }
 

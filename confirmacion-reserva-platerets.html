@@ -31,7 +31,7 @@
 		<section>
 			<div class="row" id="header">
 
-				<div class="col-md-2" id="logo">
+				<div class="col-md-2 col-xs-3" id="logo">
 					<div id="logo-wrapper">
 						<a href="LandingPage_MnC.html">
 							<img src="Assets/meetcheers_color.svg">
@@ -46,7 +46,7 @@
 
 				<div class="col-md-6" id="status">
 					<div id="status-wrapper">
-						<img src="Assets/3-reservar.svg" width="445px">
+						<img src="Assets/3-reservar.svg" id="status-img">
 					</div>
 				</div>
 
@@ -54,10 +54,8 @@
 					<div>
 					</div>
 				</div>
-
-
 			</div>
-		</section>	
+		</section>		
 
 
 
@@ -68,10 +66,10 @@
 		<section>
 			<div class="row fondogris" style="padding-top: 30px; padding-bottom: 30px;">
 
-				<div class="col-md-3">
+				<div class="col-md-3 col-1">
 				</div>
 
-				<div class="col-md-6 container-presupuesto">
+				<div class="col-md-6 col-10 container-presupuesto">
 
 					<div style="padding-top: 35px; padding-bottom: 30px; display: flex; justify-content: center; align-items: center;">
 						<img src="Assets/sent-feedback.svg" width="130px">
@@ -87,7 +85,7 @@
 						<div class="col-md-1">
 						</div>
 
-						<div class="col-md-10">
+						<div class="col-sm-10 d-none d-sm-inline">
 							<div class="resumen">
 								<img src="Assets/calendario.svg" style="padding-right: 12px;">
 								08/06/2018
@@ -100,16 +98,34 @@
 							</div>
 						</div>
 
+						<div class="col-sm-10 d-inline d-sm-none" style="align-items: center;">
+							<div class="row resumen-mobile">
+								<div class="col-12">
+									<img src="Assets/calendario.svg" style="width: 25px; padding: 5px;">
+									08/06/2018
+								</div>	
+								<div class="col-12">
+									<img src="Assets/hora.svg" style="width: 25px; padding: 5px;">
+									14:00
+								</div>	
+								<div class="col-8">
+									<img src="Assets/asistentes.svg" style="width: 23px; padding: 5px">
+									20
+								</div>
+								
+							</div>
+						</div>
+
 						<div class="col-md-1">
 						</div>
 					</div>	
 
 
 					<div class="row">
-						<div class="col-md-2">
+						<div class="col-md- col-1">
 						</div>
 
-						<div class="col-md-8">					
+						<div class="col-md-8 col-10">					
 							<h1> Platerets </h1>
 							<div style="display: inline-block;">
 								<div style="display: inline-block; padding-right: 5px;">
@@ -126,22 +142,46 @@
 							</div>
 							<br>
 							<br>
-							<div class="row" id="total">
-								<div class="col-xs-9" style="width: 75%;">
-									<h2>
-										Total
-									</h2>
-								</div>
-								<div class="col-xs-3" style="width: 25%">	
-									<span style="font-family: Raleway; font-weight: 700; font-size: 30px; color: #333333; letter-spacing: 0; line-height: 18px; text-align: right;">
-										500€
-									</span>
-									<span style="font-family: Raleway; font-weight: 500; font-size: 15px; color: #666666; letter-spacing: 0; text-align: right; line-height: 18px;">
-										(IVA incluido)
-									</span>
+							<section class="d-none d-sm-inline">
+								<div class="row" id="total">
+									<div class="col-xs-9" style="width: 75%;">
+										<h2>
+											Total
+										</h2>
+									</div>
+									<div class="col-xs-3" style="width: 25%">	
+										<span style="font-family: Raleway; font-weight: 700; font-size: 30px; color: #333333; letter-spacing: 0; line-height: 18px; text-align: right;">
+											800€
+										</span>
+										<span style="font-family: Raleway; font-weight: 500; font-size: 15px; color: #666666; letter-spacing: 0; text-align: right; line-height: 18px;">
+											(IVA incluido)
+										</span>
 
-								</div>	
-							</div>
+									</div>	
+								</div>
+							</section>
+
+							<section class="d-inline d-sm-none">
+								<div class="row" id="total-mobile">
+									<div class="col-4">
+										<h2>
+											Total
+										</h2>
+									</div>
+									<div class="col-8">	
+										<span class="float-right" style="font-family: Raleway; font-weight: 700; font-size: 30px; color: #333333; letter-spacing: 0; line-height: 18px; text-align: right;">
+											500€
+										</span>
+									</div>	
+									<div class="col-5">
+									</div>
+									<div class="col-7" >
+										<span class="float-right" style="font-family: Raleway; font-weight: 500; font-size: 15px; color: #666666; letter-spacing: 0; text-align: right; line-height: 18px;">
+											(IVA incluido)
+										</span>
+									</div>	
+								</div>
+							</section>
 						</div>
 
 
